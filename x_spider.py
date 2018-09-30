@@ -20,14 +20,13 @@ def x_spider(max_pages):
 
    page += 1
 			
-#x_spider(1)
+x_spider(1)
 
 
 goog_url = r"https://query1.finance.yahoo.com/v7/finance/download/GOOG?period1=1532959698&period2=1535638098&interval=1d&events=history&crumb=tsx7n5.mtzf"
 
 def web_crawler(download_url):
 
-  
   source_code = requests.get(download_url)
   
   plain_text = source_code.text
@@ -38,8 +37,6 @@ def web_crawler(download_url):
   csv = str(source_code.text)
   
   lines = csv.split("\\n")
-
-
   
   dest_url = r'goog.csv'
 
@@ -53,7 +50,7 @@ def web_crawler(download_url):
 
   fx.close()
 
-yahoo_crawler(goog_url)
+#web_crawler(goog_url)
 
 
 
