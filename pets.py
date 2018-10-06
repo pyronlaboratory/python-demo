@@ -11,7 +11,6 @@ class Pet(object):
   def speak(self):
     print("I'm %s and I've got %d other cute pets along with me in this list"  %(self.name, self.num_pets - 1))
 
-
 #tuffy = Pet("Tuffy")
 #snowy = Pet("Snowy")
 
