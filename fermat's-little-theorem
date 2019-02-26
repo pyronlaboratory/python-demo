@@ -38,7 +38,7 @@ def modInverse(a,m):
         print("Modular multiplicative inverse is ", 
              power(a, m - 2, m)) 
   
-# Driver code 
+# Driver code  
   
 a = 3
 m = 11
